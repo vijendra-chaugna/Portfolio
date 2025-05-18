@@ -8,6 +8,10 @@ const Home = () => {
     contactNo: ''
   });
 
+
+  const title = "Payment Information";
+  const description = "Please provide your contact details to complete the payment process.";  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -37,6 +41,10 @@ const Home = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-purple-50">
       <div className="w-full max-w-md p-4">
+         <div className="mb-6 text-center">
+          <h1 className="text-2xl font-bold text-gray-800">{title}</h1>
+          <p className="text-gray-600 mt-2">{description}</p>
+        </div>
         <div className="space-y-4">
           <div className="bg-white p-6 rounded shadow">
             <label className="block text-gray-700 text-lg font-medium mb-2">
